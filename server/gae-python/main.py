@@ -21,8 +21,8 @@ DEBUG=os.environ.get('SERVER_SOFTWARE', '').startswith('Dev')
 WEBSITE = 'https://blueimp.github.io/jQuery-File-Upload/'
 MIN_FILE_SIZE = 1  # bytes
 # Max file size is memcache limit (1MB) minus key size minus overhead:
-MAX_FILE_SIZE = 999000  # bytes
-IMAGE_TYPES = re.compile('image/(gif|p?jpeg|(x-)?png)')
+MAX_FILE_SIZE = 100000000  # bytes
+IMAGE_TYPES = re.compile('image/(zip|rar|7z|gif|p?jpeg|(x-)?png)')
 ACCEPT_FILE_TYPES = IMAGE_TYPES
 THUMB_MAX_WIDTH = 80
 THUMB_MAX_HEIGHT = 80
